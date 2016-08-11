@@ -1,4 +1,3 @@
-
 /* package whatever; // don't place package name! */
 
 import java.util.*;
@@ -6,10 +5,8 @@ import java.lang.*;
 import java.io.*;
 
 class IntPair implements Comparable <IntPair> {
-  // Ideally, name the class after whatever you're actually using 
-  // the int pairs *for.*
-   int x;
-   int y;
+  final int x;
+  final int y;
   IntPair(int x, int y) {this.x=x;this.y=y;}
   
   @Override
@@ -20,8 +17,6 @@ class IntPair implements Comparable <IntPair> {
   	if (this.y > o.y) return 1;
   	return 0;
   }
-  
-  // depending on your use case, equals? hashCode?  More methods?
 }
 
 /* Name of the class has to be "Main" only if the class is public. */
@@ -41,21 +36,18 @@ class Ideone
 	    }
 	    Collections.sort(list);
 	    
-	    if (numMinions == 0) {System.out.print("0"); return;}
-	    
 	    int counter = 1;
 	    int currentThreshold = list.get(0).y;
 	    for(IntPair ip : list){
 	    	if (ip.x <= currentThreshold){
+	    		if (ip.y <= currentThreshold)
+	    			currentThreshold = ip.y;
 	    		continue;
-	    	
 	    	} 
 	    	counter++;
 	    	currentThreshold = ip.y;
 	    }
 	   	System.out.print(counter);
-	    
-	    
-	    in.close();
+	   	in.close();
 	}
 }
