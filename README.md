@@ -16,3 +16,11 @@ Languges that are used for the challenge.
 -	JS: es5 (sample for reading input and writing output will be given on 11 aug)
 -	C#: 5.0
 
+Questions
+6-10 P1 https://open.kattis.com/problems/measurement  
+12-20 P2 https://open.kattis.com/problems/airconditioned
+12-20 P3 https://open.kattis.com/problems/unionfind
+24-40 P4 https://open.kattis.com/problems/goofy
+24-40 P5 https://open.kattis.com/problems/integerlists
+36-60 P6 https://open.kattis.com/problems/hiddencamera
+36-60 P7 https://open.kattis.com/problems/cargame
